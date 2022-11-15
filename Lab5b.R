@@ -36,3 +36,4 @@ if(n == sum) {
 } else {
   print(paste(n,"is not an Armstrong number."))
 }
+

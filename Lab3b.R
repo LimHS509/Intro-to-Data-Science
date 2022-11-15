@@ -27,6 +27,7 @@ Physics <- c(89, 86, 65, 52, 60, 67, 40, 77, 90, 61)
 df2 <- data.frame(Student_Name, Chemistry, Physics)
 
 dfMerage = merge(x = df, y = df2, by = "Student_Name", all.x = TRUE)
+#install.packages("dplyr")
 library(dplyr)
 best_score = dfMerage %>% filter(Chemistry <= 49 & Physics <= 49)
 print(best_score)

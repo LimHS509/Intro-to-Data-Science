@@ -55,3 +55,4 @@ print(array1[2,,2])
 #Print 3rd row of and 3rd column of the 1st matrix of the 2nd array
 cat("The element in the 3rd row and 3rd column of the 1st matrix:", "\n")
 print(array2[3,2,1])
+

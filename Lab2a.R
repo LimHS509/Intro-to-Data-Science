@@ -105,7 +105,7 @@ str <- ("Count the number of characters")
 result <- nchar(str)
 print(result)
 # Installing and importing package (only done once)
-install.packages("stringr")
+#install.packages("stringr")
 library(stringr)
 # Calculating length of string
 str_length(str)
