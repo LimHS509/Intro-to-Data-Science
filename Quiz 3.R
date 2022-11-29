@@ -2,7 +2,7 @@ data("iris")
 #str <- structure
 str(iris)
 
-#ggplot3 <- for visualization
+#ggplot2 <- for visualization
 #install.packages("ggplot2")
 library(ggplot2)
 
@@ -12,8 +12,10 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width)) + geom_point(aes(col=Species), size
 
 #c(1, 2, 3, 4) <- column 1-4 and ignore column 5
 iris.new <- iris[, c(1, 2, 3, 4)]
+
 #"Species <- column 5
 iris.class <- iris[, "Species"]
+
 head(iris.new)
 head(iris.class)
 
@@ -24,6 +26,7 @@ result$centers
 
 #-5 <- take the rest column except 5th column
 iris_2 <- iris[, -5]
+
 #result$cluster <- outcome of kmeans algorithm
 iris_2$cluster <- as.character(result$cluster)
 

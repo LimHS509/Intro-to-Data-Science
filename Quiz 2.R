@@ -4,6 +4,7 @@ str(data)
 
 mean(data$Sepal.Length) 
 median(data$Sepal.Length)
+
 #Method 1
 mode = function(){
   return(sort(-table(data$Sepal.Length))[1])
